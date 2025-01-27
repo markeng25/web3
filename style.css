@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box; /* Asegura que padding y border no aumenten el ancho total */
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:'Montserrat', sans-serif;
+}
+
+
+header{
+  width: 100%;
+  height: auto;
+  background-image: url(imagenes/encabezado-imagen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 20px;
+}
+
+.menu-principal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo-marina{
+  max-width: 7em;
+  height: auto;
+}
+
+/* Menú principal */
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 10px; /* Espaciado interno */
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.menu a:hover {
+  background-color: rgb(15, 217, 224);
+  padding: 10px 20px; /* Incrementa el padding para hacerlo más ancho */
+  border-radius: 5px; /* Opcional: bordes redondeados */
+  color: black;
+}
+
+ /* Menú responsivo: botón hamburguesa */
+ .menu-toggle {
+  display: none; /* Oculto por defecto */
+  width: 40px;
+  height: 30px;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-toggle span.menu-text {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  left: -90px; /* Ajuste de la distancia a la izquierda */
+  top: 50%; /* Centrado verticalmente */
+  transform: translateY(-50%);
+}
+
+.menu-text{
+  background-color: rgb(116, 236, 18);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  border: 4px solid black; /* Contorno negro y grueso */
+}
+
+.menu-toggle::before,
+.menu-toggle::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.menu-toggle::before {
+top: 5px; /* Línea superior */
+}
+
+.menu-toggle::after {
+bottom: 5px; /* Línea inferior */
+}
+
+audio {
+  display: none; /* Ocultar el reproductor de audio */
+}
+
+
+.banner{
+  width: 100%;
+}
+
+.principal{
+  padding: 3em;
+  background-image: linear-gradient(rgb(3, 147, 184), rgb(56, 209, 209) );
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.titulo-color{
+  color: transparent;
+  text-align: center;
+  font-size: 2em;
+  clear: left;
+  font-family: 'Raleway', sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+                        6px 6px #ff1f8f,
+                        10px 10px #000000;
+}
+
+.imagen-centrada {
+  display: block; /* Convierte la imagen en un elemento de bloque */
+  margin: 5px auto; /* Centra horizontalmente la imagen */
+  max-width: 300px; /* Evita que la imagen exceda el ancho del contenedor */
+  width: 100%; /* Escala la imagen dentro de su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.marketing{
+  text-align: center;
+  font-size: 25px; /* Cambia el tamaño del título */
+  text-decoration: underline; /* Subraya el título */
+
+}
+
+p {
+  margin: 0; /* Elimina márgenes por defecto */
+  margin-bottom: 0px; /* Añade espacio entre párrafos */
+  text-align: justify;
+}
+
+.principal p{
+  margin: 0 0 1em;
+  color: rgba(0,0,0 ,0.8);
+  display: block;
+}
+
+.principal strong{
+  font-weight: bold;
+}
+
+.mapa{
+  padding: 3em 0;
+  background-color: rgb(56, 209, 209);
+}
+
+.titulo-mapa{
+  color: transparent;
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+  padding-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+                        6px 6px #f10707,
+                        10px 10px #000000;
+}
+
+.mapa p{
+  margin: 0 0 2em;
+  text-align: center;
+  color: rgba(0,0,0 ,0.8);
+}
+
+.mapa-contenido{
+  width: 940px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+  border-radius: 8px; /* Opcional: Bordes redondeados */
+  overflow: hidden; /* Asegura que el mapa no sobresalga del contenedor */
+  border: 0; /* Elimina el borde del iframe */
+
+}
+
+footer{
+  width: 100%;
+  background-image: url(imagenes/encabezado-imagen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 5px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los dos divs */
+  align-items: center; /* Alineación vertical */
+}
+
+.imagen-laterales{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido de la izquierda */
+}
+
+.text-bajo-logo {
+  color: white;
+  font-size:x-small;
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin:0 0 5px 0; /* Elimina márgenes extra del texto */
+}
+
+.informativo {
+  text-align: left; /* Alinea todo el texto dentro de .informativo a la izquierda */
+  color: white;
+  font-size: 12px;
+}
+
+.informativo p:first-child {
+  font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+  font-weight: bold; /* Hace el texto más grueso */
+  color: #ee0505; /* Cambia el color del texto, puedes elegir otro color */
+  margin-bottom: 5px; /* Espacio debajo del primer párrafo */
+}
+
+.informativo p {
+  font-size: 1em; /* Tamaño de fuente normal para los demás párrafos */
+  color: rgb(255, 255, 255); /* Color blanco para los otros textos */
+  text-align: left; /* Asegura que los textos también estén alineados a la izquierda */
+}
+
+
+/* Ocultar menú en dispositivos móviles por defecto */
+@media (max-width: 768px) {
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0s ease; /* Transición rápida de 0.1 segundos */
+}
+
+.menu-toggle {
+  display: flex;
+}
+
+.menu-toggle span.menu-text {
+display: inline-block; /* Mostrar el texto "Menú" */
+}
+
+.menu li{
+margin: 10px 0;
+}
+
+  .menu a{
+      font-size: 16px; /* Tamaño del texto */
+      font-weight: 700; /* Letras más gruesas */
+      padding: 10px 15px; /* Espaciado interno para mantener proporción */
+  }
+
+  .menu a:hover{
+    background-color: rgb(85, 252, 8);
+    color: black;
+    transition: background-color 0s ease; /* Transición rápida al hacer hover */
+  }
+
+  .menu.show {
+    display: flex; /* Mostrar el menú cuando se active */
+    background-color: #15cedb;
+}
+
+
+/* Otros estilos */
+.banner {
+width: 100%;
+}
+
+  .arriba, .principal, .mapa-contenido{
+      width: auto;
+  }
+
+  .mapa-contenido{
+      max-width: 90%; /* Reduce el ancho máximo a un 90% del ancho de la pantalla */
+      padding: 0 0; /* Añade algo de padding para centrar el mapa */
+  }
+  footer p{
+    font-size: x-small;
+}
+
+}
